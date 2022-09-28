@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtQuest1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digite seu salario:"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/etQuest1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtQuest1"
+        android:inputType="numberDecimal"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/txtQuest2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etQuest1"
+        android:text="Qual o percentual que você deseja ganhar a mais?"
+        android:textSize="30dp" />
+
+    <RadioGroup
+        android:id="@+id/rg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtQuest2">
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="40%"
+            android:checked="true"
+            android:textSize="30dp" />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="45%"
+            android:textSize="30dp" />
+
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="50%"
+            android:textSize="30dp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rg1"
+        android:text="Calcular novo salário" />
+</RelativeLayout>
